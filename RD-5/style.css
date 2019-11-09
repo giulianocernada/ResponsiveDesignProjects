@@ -1,0 +1,162 @@
+body {
+	text-align: center;
+	font-family: 'Red Hat Text';
+	margin: 0;
+}
+
+nav {
+	display: block;
+}
+
+#navbar {
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#nav-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	background-color: #192545;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	height: 30px;
+}
+
+.nav-link {
+	padding: 0 10px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-shadow: 1px 1px gray;
+}
+
+#welcome-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #000000;
+	background-image: linear-gradient(45deg, #909090 0%, #424242 100%);
+	color: #FFFFFF;
+}
+
+#welcome-title {
+	font-size: 50px;
+	margin: 0;
+}
+
+#welcome-description {
+	color: #192545;
+	font-size: 25px;
+	margin: 0;
+	font-style: italic;
+}
+
+#projects {
+	text-align: center;
+	background-color: #C8B282;
+}
+
+#projects-title {
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 50px;
+	text-decoration: underline;
+	padding: 50px;
+}
+
+#projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 0;
+	padding-bottom: 50px;
+}
+
+.project-tile {
+	text-decoration: none;
+	color: #FFFFFF;
+	margin: 0 20px;
+	box-shadow: 2px 2px 5px black;
+}
+
+.project-img {
+	height: calc(100%);
+	width: 100%;
+	object-fit: cover;
+	height: 250px;
+}
+
+.project-title{
+	background-color: #192545;
+	margin: 0;
+	padding: 20px;
+	margin-top: -10px;
+}
+
+#contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-color: #192545;
+	border-bottom: 5px solid #C8B282;
+	padding: 150px 0px;
+}
+
+#contact-title {
+	margin: 0;
+	color: white;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.contact-links {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1000px;
+	flex-wrap: wrap;
+}
+
+.contact-details {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+footer {
+	padding: 50px;
+	background-color: #192545;
+	color: #FFFFFF;
+	margin-top: 0;
+	text-align: right;
+}
+
+@media (max-width: 500px) {
+	#contact-section {
+		padding: 50px 0;
+	}
+
+	#contact-title {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.contact-details {
+	width: 100%
+	}
+}
